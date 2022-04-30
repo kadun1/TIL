@@ -26,4 +26,7 @@ HttpServlet을 상속받아 사용하며, 서블릿으로 동작한다.
 2. 스프링 MVC는 DispatcherServlet의 부모인 FrameworkServlet에서 service()를 오버라이드 해두었다.
 3. FrameworkServlet.service()를 시작으로 여러 메서드가 실행되며 DispatcherServlet.doDispatch()가 호출된다.
 
+
 (출처 : https://catsbi.oopy.io/f52511f3-1455-4a01-b8b7-f10875895d5b / )
+
+ps. 아무 생각없이 스프링이 제공하는 기능들을 가져다쓰기 보다는 직접 프레임워크에 구현되어 있는 메소드들을 하나씩 분석하는 것이 많은 도움이 되는 듯 하다.
