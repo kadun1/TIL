@@ -11,3 +11,19 @@
 * 별다른 말이 없으면 MVC Model 2 아키텍처를 사용하는 것으로 생각한다.
 
 ![img_5.png](img_5.png)
+
+#DispatcherServlet 구조
+
+HttpServlet을 상속받아 사용하며, 서블릿으로 동작한다.  
+* DispatcherServlet -> FrameworkServlet -> HttpServletBean -> HttpServlet
+
+스프링 부트 구동시 DispatcherServlet을 서블릿으로 자동등록하며 모든 경로에 대해 매핑한다.
+
+![img_6.png](img_6.png)
+
+##요청 흐름
+1. 서블릿이 호출되면 HpptServlet이 제공하는 service() 메소드가 호출된다.
+2. 스프링 MVC는 DispatcherServlet의 부모인 FrameworkServlet에서 service()를 오버라이드 해두었다.
+3. FrameworkServlet.service()를 시작으로 여러 메서드가 실행되며 DispatcherServlet.doDispatch()가 호출된다.
+
+(출처 : https://catsbi.oopy.io/f52511f3-1455-4a01-b8b7-f10875895d5b / )
