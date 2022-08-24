@@ -2,5 +2,5 @@ date : 현재시간이 나온다.
 ncal : 이번달 달력이 나온다.
 clear : 터미널 창을 지워준다.
 
---기본적인 terminal 프롬프트
+--기본적인 terminal 프롬프트--
 username@hostname
