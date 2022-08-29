@@ -1,0 +1,4 @@
+NANO Editor
+
+Control + O : Write 기능(왜인지 Mac 에서는 Control + S 가 안된다)
+Control + G : 를 통해 명령어를 알아볼 것..Mac과 일반 키보드 단축키가 상당히 다르다
