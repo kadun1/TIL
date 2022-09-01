@@ -1,0 +1,10 @@
+Control + l : clear 역할을 한다
+
+Control + a : 명령줄 처음으로
+Control + e : 명령줄 마지막으로
+
+Control + f : 앞으로
+Control + b : 뒤로
+
+alt(option) + f : 한 단어 앞
+alt(option) + b : 한 단어 뒤
