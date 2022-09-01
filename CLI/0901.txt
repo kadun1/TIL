@@ -8,3 +8,18 @@ Control + b : 뒤로
 
 alt(option) + f : 한 단어 앞
 alt(option) + b : 한 단어 뒤
+
+control + t : 앞글자와 위치 바꾸기
+alt + t : 앞단어와 위치 바꾸기
+
+control + k : 커서부터 끝까지 삭제
+control + u : 커서부터 앞을 삭제
+
+alt + d : 단어 삭제
+control + d : 현재 커서 위치 삭제
+
+control + w : 커서부터 앞으로 단어 삭제
+
+control + y : yanking - 삭제한 문구를 다시 불러온다
+
+history 에서 Control + r 을 누르면 
