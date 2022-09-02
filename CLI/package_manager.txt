@@ -1,0 +1,11 @@
+Package Manager
+apt 명령어
+
+sudo apt-get update; - 최신 상태의 소프트웨어 "목록"을 다운받는다.
+
+sudo apt-cache search htop - 설치 가능한 패키지 목록을 보여준다.
+
+sudo apt-get install htop -  htop을 설치
+sudo apt-get upgrade htop - 업그레이드
+sudo apt-get upgrade - apt를 통해 받은 모든 프로그램 업데이트
+sudo apt-get remove htop - htop 삭제
