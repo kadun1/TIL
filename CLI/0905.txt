@@ -1,0 +1,14 @@
+경로명 확장
+와일드카드
+
+*   :   아스트리크 0~여러문자
+?   :   하나의 아무 문자
+[]   :   범위문자 [A-Z] , [0-9] // echo [A-H]*[ps]
+^   :   일치하지 않는 문자    // echo [^cC]* 
+~   :   틸드 확장 : 사용자의 홈 디렉토리
+{}   :   중괄호 확장 - 여러 문자열 만들기   // touch page{1,2,3}.txt  ==>> page1.txt page2.txt page3.txt
+	echo Dec_{Mon,Tue,Wed,Thu,Rfi}_{AM,PM}.txt
+	{0..365} ==>> 0에서 365까지
+	{2..10..2} ==>> 2에서 10까지 2칸 간격으로
+	mkdir -p {Mon,Tue,Wed,Thu,Fri,Sat,Sun}/{Breakfast/Lunch/Dinner} ==>> 디렉토리 하위구조까지 동시에 만든다.
+	
