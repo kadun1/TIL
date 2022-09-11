@@ -1,0 +1,13 @@
+권한 관련
+
+r   :   read
+w   :   write
+x    :   excute
+
+
+파일타입
+
+-   :   regular file
+d   :   directory
+c   :   character special file
+l   :   symbolic link
