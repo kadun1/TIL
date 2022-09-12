@@ -2,7 +2,7 @@
 
 r   :   read
 w   :   write
-x    :   excute
+x    :   excute   -   디렉토리에서 x 권한이 없으면 cd로 접근이 불가능
 
 
 파일타입

@@ -1,0 +1,1 @@
+chsh -s /bin/bash    :    zsh 를 bash 로 바꾼다
