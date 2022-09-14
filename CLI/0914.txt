@@ -1,0 +1,12 @@
+환경변수
+
+printenv   :   접속한 계정의 환경변수를볼 수 있다(K:V 구조)
+
+매개변수 확장
+환경변수 접근하는 방법   :   $USER  ,  $PWD  ,  $OLDPWD   등등....
+ㄴ환경변수 key는 모두 대문자이다.
+
+나만의 환경변수 만들기
+animal=nudibranch    :    쉘변수 저장(환경변수 아님, 지역변수처럼 동작)
+
+export animal=mandrill   :   환경변수 저장
