@@ -1,0 +1,26 @@
+- redirection
+- 표준 입력(0) 출력(1) 에러(2) : 괄호는 디스크럽터 번호
+
+1. 출력 redirection
+ command > filename
+ㄴ 이미 있는 파일에 다시 하면 덮어씌운다.
+추출한 파일을 sort -k5n 등을 통해 정렬(로그 활용 등)
+ command >> filename 을 통해 덮어쓰지 않고 연결해서 
+echo [메세지] > filename 으로 편집기를 열지 않고 바로 입력
+
+2. 입력 redirection
+ commant < filename
+단순 사용으로는 의미없지만, 파이프라인과 함께 사용하면 유용하다
+
+3. 입출력 동시 redirection
+=
+cat < original.txt > output.txt
+
+4. 표준에러 redirection
+command 2> filename
+command 2>> filename 으로 이어서도 가능
+
+5. 추가
+표준 출력과 에러를 redirection 할때는 출력을 먼저 작성
+출력과 에러를 같은 파일에 저장하는 방법 2>&1
+ㄴ ls -l > output.txt 2>&1     ==      ls -l &> output.txt   으로 줄여쓸 수도 있음

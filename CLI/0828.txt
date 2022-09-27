@@ -1,7 +1,7 @@
 xdg-open : root directoryfmf gui로 연다. 
 ㄴ맥에서는 open / 로 연다.
 리눅스에서는 모든 사용자는 /home 디렉토리 내에 존재한다.
-ㄴ맥에서는 Users 인듯
+ㄴ맥에서는 Users
 
 pwd : print working directory
 ls : list , ls / 등으로 경로지정이 가능

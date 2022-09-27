@@ -1,0 +1,55 @@
+권한 관련
+
+r   :   read
+w   :   write
+x    :   excute   -   디렉토리에서 x 권한이 없으면 cd로 접근이 불가능
+
+
+파일타입
+
+-   :   regular file
+d   :   directory
+c   :   character special file
+l   :   symbolic link
+
+
+chmod   :   파일의 권한을 변경
+
+chmod mode file
+
+u : user
+g : group
+o : others
+a : all of the above
+
+-   : 권한삭제
++  :  권한부여
+=  :  해당권한을 유일하게 주고 나머지는 삭제한다.
+
+chmode g+w file.txt  그룹에 쓰기 권한을 준다
+chmod a-w file.txt 모든 사용자에게 쓰기 권한 삭제
+chmod a=r file.txt  모든 사용자가 읽기 권한만 가지게 한다
+chmod u+wx file.txt  처럼 두 권한 동시에 줄 수도 있다
+
+8진법 사용가능!!
+
+
+su ( 대체 유저 )
+su 와 su - 의 차이   :   대시 기호가 없으면 환경이 변하지 않는다. 즉, 기존 환경에 머물러 있음
+
+sudo   :   루트 사용자로 다른 커맨드를 실행할 수 있는 커맨드
+
+
+chown   :  파일, 디렉토리의 소유자 또는 그룹 소유자를 변경
+chown USER[:GROUP] FILE   :   자신이 가진 파일이라 하더라도 소유자를 변경할 수 없다. sudo로 root유저권한으로 주어야 함
+chown :group file.txt   :   그룹명 앞에 콜론(:)을 사용하여 그룹 권한 변경 가능
+chown user:gourp file.txt   :   사용자과 그룹 권한을 모두 변경할 수 있다.
+
+
+
+그룹 관련
+
+groups 사용자명   :  해당 사용자의 그룹 목록을 볼 수 있다.
+addgroup 그룹명  :  그룹 추가(sudo 필요)
+adduser 사용자명 그룹명  :  해당 그룹에 사용자 추가(sudo 필요)
+그룹을 변경한 후에는 세션을 다시 로그인 해야한다..번거로운 점!

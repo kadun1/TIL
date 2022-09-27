@@ -1,0 +1,15 @@
+NANO Editor
+
+Control + O : Write 기능(왜인지 Mac 에서는 Control + S 가 안된다)
+Control + G : 를 통해 명령어를 알아볼 것..Mac과 일반 키보드 단축키가 상당히 다르다
+Control + w : 검색(대소문자 가리지 않음)
+ㄴ대소문자 구분 가능한 키가 있음(윈도우 기준 alt+c)
+ㄴ위로 검색도 가능 : Control + b
+
+Control + \ : 바꾸기
+ㄴ 다음 바꾸기 n , 전부 바꾸기 a
+
+/etc/nanorc 에서 철자검사기가 안된다면, "spell" 검색하여
+ㄴ set speller ~~ 부분 주석을 해제하면 철자 검사기를 쓸 수 있다. 여러 단어도 동시에 바꿀 수 있다.
+
+nano +1234 filename 으로 바로 1234번째 행을 열 수 있다.

@@ -1,0 +1,55 @@
+
+locate 명령어 - 사전에 생성된 데이터베이스를 사용한다.
+-i  :  대소문자 구분없음
+-l숫자  :  갯수 
+-e  :  locate는 database를 사용하기 때문에, 삭제 직후에 조회하면 여전히 있다. 이때 e 옵션을 통해 존재 유무를 확인할 수 있다.
+ㄴ updatedb 를 통해 갱신 가능
+
+find  :  locate보다 강하지만 시간이 더 걸림(데이터베이스가 아니라 실제 검색)
+ls 는 현재 디렉토리 리스트만 보여주지만 find는 하위까지 전부 보여준다
+find . | wc -l 로 하위 모든 파일(+디렉토리)의 개수를 알 수 있다.
+
+find . -type d   :  현재부터 모든 파일 타입을 찾는다(디렉토리 제외)
+
+find . -name " "*.txt"   :   name은 대소문자를 구분한다. -iname 옵션으로 대소문자 구분없이 가능
+
+find ~ -name "*[0-9]*"    :    방식으로 0에서 9까지가 포함된 파일을 찾을 수도 있다.
+
+find 추가 옵션
+
+find -size +1G(-1G) +는 이상 -는 이하
+find -user 로 특정 사용자 파일
+find -empty 로 빈 파일 찾기 가능
+
+TimeStamps
+
+mtime   :   파일이 마지막으로 변경된 시간(mv 등으로 변경되지 않음)     -   modify
+ctime    :   mv등 메타 정보가 변경된 시간 (ls -lc)   -   change
+atime    :   파일을 읽은(접근) 시간(ls -lu)     -    access
+ㄴ find에 각 타임스탬프별 명령어가 있다.
+
+touch 파일명 -d "3 week ago"   :  -d 명령어로 이전 시간의 파일을 생성할 수 있다.(숫자 + days, week, month 등)
+find -mnin +30   :   30분 이상 전에 수정된 파일
+
+
+논리연산자 옵션
+
+-not   :   ! 로도 쓸 수 있다.
+
+find ~ -not -name "*.txt"    :   txt가 아닌 모든 파일...
+
+-or   :   둘 중 하나만 만족해도 찾는다.
+
+find -exec command '{}' ';'   :   find로 찾은 것들에 대해 어떠한 명령어를 수행한다.
+find ~ -type f -empty -exec ls -l '{}' ';'   :   ls 명령어는 표준입력을 지원하지 않기 때문에 파이프라인으로 사용할 수 없다.
+
+-exec 대신 -ok 옵션을 쓰면 실행할때마다 물어본다.
+
+옵션이 2개일 경우
+find ~ -type f -name "*.html" -exec cp '{}' '{}_COPY' ';'  처럼 두번 쓴다.
+
+
+xargs 명령어
+표준입력을 받아 인자 목록으로 변환하는 역할을 한다.
+
+find . -empty | xargs ls -l    :   ls 명령어가 가능해진다. 어떤 명령어가 수행되는지는 xargs 에 -t 옵션을 주면 된다.
