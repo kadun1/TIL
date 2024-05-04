@@ -1,0 +1,19 @@
+docker version
+ - docker --version
+docker build
+ - docker image bulid -t 이미지명[:태그명] Dockerfile경로
+docker pull
+ - docker image pull 레파지토리명[:태그명]
+docker 상태확인
+ - docker ps
+ - docker ps -a
+docker 컨테이너
+ - docker container ls -a
+ - docker start 컨테이너ID
+ - docker attach 컨테이너ID
+ - docker stop 컨테이너ID
+ - docker run 컨테이너ID
+ - docker run -it 컨테이너ID
+ - docker rm 컨테이너ID
+ - docker exec -it 컨테이너ID /bin/bash
+ 
