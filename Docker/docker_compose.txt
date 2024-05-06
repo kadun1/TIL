@@ -1,0 +1,15 @@
+Docker compose 주요 명령어
+ - up : 컨테이너 생성/시작
+ - ps : 컨테이너 목록 표시
+ - logs : 컨테이너 로그 출력
+ - run : 컨테이너 실행
+ - start : 컨테이너 시작
+ - stop : 컨테이너 정지
+ - restart : 컨테이너 재시작
+ - pause : 컨테이너 일시 정지
+ - unpause : 컨테이너 재개
+ - port : 공개 포트 표시
+ - config : 구성 확인
+ - kill : 실행 중인 컨테이너 강제 정지
+ - rm : 컨테이너 삭제
+ - down : 리소스 삭제
