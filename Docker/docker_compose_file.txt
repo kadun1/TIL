@@ -1,0 +1,9 @@
+version : 도커 컴포즈의 버전을 기재한다.
+services : 컨테이너를 정의한다. (컨테이너의 집합체를 주로 서비스라고 한다.)
+image : 사용할 이미지를 지정
+networks : 접속할 네트워크를 지정
+volumes : 스토리지 마운트(볼륨)를 설정
+ports : 포트 설정
+environment : 환경변수 설정
+depends_on : 다른 서비스에 대한 의존관계를 정의
+restart : 컨테이너 종료 시 재시작 여부를 설정
