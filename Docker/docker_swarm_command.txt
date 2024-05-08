@@ -1,0 +1,11 @@
+도커 서비스 생성 : docker service create  이미지명:태그
+
+* 옵션
+--mode global : 클러스터 내의 모든 노드에 컨테이너를 반드시 하나씩 생성함. 따로 --replica가 필요 없다.
+                                보통 global 모드는 warm cluster를 모니터링 하기 위한 agent container 등을 생성할 때 유용하다.
+
+--replica 숫자 : 생성할 컨테이너의 개수 명시
+--name 이름 : 서비스의 이름 명시
+-p 외부포트:내부포트 : 포트 설정. 도커와 동일
+-network=이름 : 어떤 네트워크에 속할지 정의
+--update-delay 시간s : 이 서비스에 대해 업데이트를 진행할 때, 각 task에 대한 업데이트 시 일정한 시간 간격을 두도록 설정
