@@ -55,16 +55,17 @@ Code line start
 
 Code line end
 
+
 This is `single line code` and below is
-```java
-Multi
-Line
-Codes
+```kotlin
+//Multi
+//Line
+//Codes
 
-public class My {
-  public static void main(String[] args) {
-    -- TODO
-  }
+class My {
+  
 }
-
+fun main(args: Array<String>) {
+  // TODO
+}
 ```
